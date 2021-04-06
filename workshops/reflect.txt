@@ -1,0 +1,34 @@
+The reason for specializing the operator+=() function is when the parameter for the key and the value are strings.
+When it comes to integers or double values, I created a member function when the += receives a PairSummable object reference,
+and share the same key but different address, it basically adds the orignial value and the value within the parameter.
+However, summation does not work when it comes to strings, so I made a specialization for string value where, it concatenates 
+a comma and a space between the original string and a new string value. 
+
+
+The reason for specializing the initial value for a summation ->
+Since, this is a template class, the data type is not declared in the implementation which means I need to speicalize 
+where the value is an integer type or a string type. Therefore, initial value needs to be set to zero for integer data type and
+an empty string "" for string type
+
+The reason for defing the class variable outsize class definition ->
+The private members of the class is a static variable which means, it needs to be defined outside of class, in order for the 
+variables to be visible in the other scope (Internal linkage).
+
+The reason for implementing the functions in the header files is that, this is a template inheritance.
+When the complier create a new instance with data type attributes, it needs to access the implementation as well,
+however, if the implementation is not there in the header file, the complier won't be able to access nor find 
+the implementation, thus it won't be able to instantiate the template.
+
+The prototype intial means that static variable V's date type is not decided until the complier instantiate 
+the template. And constructor needs to receive where the value is a string type or an integer type, that is why
+specialization for initial value was needed. After assigning the initial value to zero or an empty string depending on
+the data type, prototype =initial, for my case ( =initialVal) will set the value to given parameter and proceed to
+further functions.
+
+This is my first workshop that I worked on template inheritance, took me some time to understand how template inheritance works.
+Also, specialization seemed very useful in a way to tell the complier to do different action depending on the data type.
+
+I had few difficulties on specialization because I didn't know how to implement them nor start it up. I had to research online
+what it is for, and read the class examples to finish it off.
+Also, +=operator took me some time to access my private member variable and I figured out a different way to create a 
+temporary object that holds the same key and calcuation/concatenation value and assign it to the current object.

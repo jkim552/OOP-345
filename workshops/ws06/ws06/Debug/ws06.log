@@ -1,0 +1,3 @@
+﻿  w6_p2.cpp
+D:\학교\S3\OOP345\workshops\ws06\ws06\w6_p2.cpp(36,22): warning C4101: 'msg' :참조되지 않은 지역 변수입니다.
+  ws06.vcxproj -> D:\학교\S3\OOP345\workshops\ws06\Debug\ws06.exe

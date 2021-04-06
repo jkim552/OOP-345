@@ -1,0 +1,2 @@
+D:\학교\S3\OOP345\workshops\ws05\Debug\ws05.exe.lastcodeanalysissucceeded
+D:\학교\S3\OOP345\workshops\ws05\ws05\Debug\NativeCodeAnalysis.read.1.tlog

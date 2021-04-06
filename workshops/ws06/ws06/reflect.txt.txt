@@ -1,0 +1,23 @@
+Q1>
+Because everytime I allocate a new memory vehicles which are Car or Racecar,
+I used a new object to create that instance, then added to the vector array.
+In order to prevent memory leak, I had to deallocate the dynamic allocated memory
+in my vector.
+
+Q2>
+loadData() function has multiple exception handlers to catch the exception occured.
+First one would be not being able to open the file if the file does not open.
+And after the file is opened, I had to check if it had an invalid vehicle. ( record type)
+In the Untilities module, I made a statement to throw that character if the character is not
+c or C or r or R, and the exception shows if there is any exception occurred.
+And after that in the Car module, if the condition of the vehicle is nor new, used, broken,
+there was an exception handler to throw the vehicle is not valid.
+
+The other way to implement this was to do all the error handling from reading the file instance.
+Had to go back and forth to my modules which one was causing the error and not.
+Rather than having multiple error handlers in different module.
+
+Q3>
+It would be harder to implement with using std::list<sdds::Vehicle> and std::vector<sdds::Vehicle> instead
+because I am using multiple class object to store it in the vector and list array. Having it as a pointer will save more 
+time on accessing the object and more efficient to add and assign those pointers to the vector and list.

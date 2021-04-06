@@ -1,0 +1,21 @@
+Q1>>
+I used vector and algorithm standard template library functions to perform this workshop.
+Since, the SongCollection was a vector of songs, I used auto keyword to access its content
+and not use manual loop instead.
+For example, 
+for (auto& _song : collection) 
+will iterate through all the content in the collection and implemented the result that I
+was looking for.
+
+Q2>>
+Using STL algorithms are faster and clearer in a way because I can do anything with it 
+rather than creating a temporary statement to manually iterate throughout its content.
+Implementing the funtionality myself can be used in a more specific situation where I 
+know the amount of the length I need to access through.
+I was able to understand its concept of STL algorithms through this workshop which was
+easier than I was designing through my head.
+
+Q3>>
+If the client specifies an invalid field, I would implement a function where if the given 
+parameter is not what I was looking for. ( title, album, and length) , then throw an exception
+that invalid parameter was given, and ask the user to prompt for different input.

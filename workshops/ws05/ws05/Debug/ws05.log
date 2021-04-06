@@ -1,0 +1,8 @@
+﻿  Book.cpp
+  Movie.cpp
+  SpellChecker.cpp
+  w5_p2.cpp
+  컴파일하고 있습니다...
+  코드를 생성하고 있습니다...
+  ws05.vcxproj -> D:\학교\S3\OOP345\workshops\ws05\Debug\ws05.exe
+D:\학교\S3\OOP345\workshops\ws05\ws05\Collection.h(57): warning C6385: 'c_items'에서 잘못된 데이터를 읽고 있습니다.  읽기 가능한 크기는 '(unsigned int)*60+4'바이트인데 실제로는 'c_size'바이트만 읽을 수 있습니다.

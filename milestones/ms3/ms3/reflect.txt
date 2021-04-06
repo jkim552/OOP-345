@@ -1,0 +1,14 @@
+The first two milestones were pretty easy for me to finish. However, the last milestone
+took me a while to debug to find correct output. It was my first time using deque and 
+vector type which I had to go over the notes and research more on cplusplusreference
+to find built-in functions to use. 
+
+Also, for function displayStationsSorted(), took me the most time to implement but the 
+outcome was pretty simple. I just had to create another private variable called Sorted
+which stores the stations on the assembly line in the order they are linked.
+I was able to store that during the constructor which was very simple for me to display
+afterwards.
+
+This milestone gave me insights on how vectors and deque are used and was able to
+understand further during the debugging process.
+Thank you for your instructions!
